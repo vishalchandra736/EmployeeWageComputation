@@ -3,10 +3,14 @@ package com.blz.employeewagecomputation;
 public class EmployeeWageComputation {
     public static void main(String[] args) {
         int IS_Full_Time = 1;
+        int EMP_RATE_PER_HOUR = 20;
+        int empHour, empWage;
         int empCheck = (int)(Math.floor(Math.random() * 10 % 2));
         if (empCheck == IS_Full_Time)
-            System.out.println("Employee is Present");
+            empHour = 8;
         else
-            System.out.println("Employee is Absent");
+            empHour = 0;
+        empWage = EMP_RATE_PER_HOUR * empHour;
+        System.out.println("Employee Daily Wage : " + empWage);
     }
 }
