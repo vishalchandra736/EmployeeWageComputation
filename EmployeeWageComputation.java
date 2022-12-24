@@ -6,7 +6,8 @@ public class EmployeeWageComputation {
         int NUM_OF_WORKING_DAYS = 20;
         int MAX_HOURS_IN_MONTH = 100;
         int empHour = 0, monthEmpWages = 0, totalWorkingDays = 1, totalEmpHours = 0;
-        while( totalWorkingDays <= NUM_OF_WORKING_DAYS && totalEmpHours <= MAX_HOURS_IN_MONTH) {
+        for(int i=1; i<=NUM_OF_WORKING_DAYS && totalEmpHours <= MAX_HOURS_IN_MONTH; i++) {
+        //while( totalWorkingDays <= NUM_OF_WORKING_DAYS && totalEmpHours <= MAX_HOURS_IN_MONTH) {
             int empCheck = (int) (Math.floor(Math.random() * 10 % 3));
             switch (empCheck) {
                 case 1:
